@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "quibax/laravel-singlestore-grammar",
+    "description": "SingleStore compatible grammar for Eloquent",
     "keywords": [
-        ":vendor_name",
+        "QuibaX",
         "laravel",
-        ":package_slug"
+        "laravel-singlestore-grammar"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/quibax/laravel-singlestore-grammar",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "QuibaX",
+            "email": "quibax@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "QuibaX\\LaravelSinglestoreGrammar\\": "src"
         }
     },
     "scripts": {
@@ -45,16 +39,6 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
-            }
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
