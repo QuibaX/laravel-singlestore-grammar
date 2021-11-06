@@ -14,7 +14,7 @@ To add the package, add the repository under the repositories in your composer.j
 Next, add the package under 'require'.
 ```json
 "require": {
-    "quibax/laravel-singlestore-grammar": "dev-master",
+    "quibax/laravel-singlestore-grammar": "dev-main",
 }
 ```
 

@@ -18,4 +18,11 @@ class SingleStoreGrammar extends MySqlGrammar
 
         return 'json_extract_json('.$field.$path.')';
     }
+
+    protected function compileJsonContains($column, $value)
+    {
+        [$field, $path] = $this->wrapJsonFieldAndPath($column);
+
+        return 'JSON_ARRAY_CONTAINS_STRING('.$field.', '.$value.$path.')';
+    }
 }
